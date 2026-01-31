@@ -1,311 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sathya Sudar</title>
-    <link rel="stylesheet" href="new.css" />
-  </head>
-  <body>
-    <!-- NAV BAR -->
-    <header class="navbar">
-      <div class="logo">SATHYA SUDAR</div>
 
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#Projects">Projects</a>
-        <a href="#connect">Connect</a>
-      </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathyasudar | Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Sathyasudar, a Software Development Trainee from Tenkasi at Freshworks STS Software Academy, specialized in HTML, CSS, JavaScript, and Python.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
 
-    <section>
-      <div class="bento-container" id="about">
-        <div class="card gallery-card">
-          <div class="image-container">
-            <img
-              id="gallery-img"
-              src="assets/IMG_20251113_161412.jpg"
-              alt="Profile"
-            />
-          </div>
-          <p id="gallery-caption">Evening Tea Vibes 🌆☕</p>
-        </div>
+<body>
+    <div id="cursor-glow"></div>
 
-        <div class="middle-col">
-          <div class="card info-card">
-            <span>Surviving & Growing as an Upcoming Developer</span>
-            <h3>Developer</h3>
-          </div>
-
-          <div class="social-grid">
-            <div class="card social-icon">
-              <img class="card social-icon" src="assets/game-console.png" />
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">SATHYASUDAR<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i data-lucide="menu"></i>
             </div>
-            <div class="card social-icon">
-              <img class="card social-icon" src="assets/paint-palette.png" />
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h2 class="reveal-text">Hello, I'm</h2>
+                    <h1 class="glitch" data-text="Sathyasudar">Sathyasudar</h1>
+                    <h3 class="typewriter">Software Developer</h3>
+
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn primary">View Work</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="blob-container">
+                        <div class="blob"></div>
+                        <img src="assets/IMG_20260101_174429.jpg" alt="Sathyasudar" id="profile-img">
+                    </div>
+                </div>
             </div>
-            <div class="card social-icon">
-              <img class="card social-icon" src="assets/programming.png" />
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
             </div>
-            <div class="card social-icon">
-              <img class="card social-icon" src="assets/travel.png" />
+        </section>
+
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-visual">
+                        <div class="image-wrapper glass">
+                            <img src="assets/IMG_20251113_161412.jpg" alt="Sathyasudar" class="about-img">
+
+                            <div class="location-badge glass">
+                                <i data-lucide="map-pin"></i>
+                                <span>Tenkasi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="section-header">
+                            <h2>About Me</h2>
+                        </div>
+                        <h2 class="about-tagline">Building <span>meaningful</span> digital solutions with purpose.</h2>
+                        <p>I am a Software Development Trainee from Tenkasi, currently training at <strong>Freshworks
+                                STS Software Academy</strong>. I enjoy building responsive and user-friendly web
+                            applications using HTML, CSS, JavaScript, and Python.</p>
+                        <p>My interest in technology comes from solving real-world problems and continuously improving
+                            my skills. I believe in writing clean code, learning consistently, and growing through
+                            practical experience.</p>
+
+                        <div class="about-tags">
+                            <span class="tag">Problem Solver</span>
+                            <span class="tag">Curious Thinker</span>
+                            <span class="tag">Continuous Learner</span>
+                        </div>
+
+                        <div class="about-action">
+                            <a href="#contact" class="btn primary">Let's Connect</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="card info-card">
-            <span>Buffering in</span>
-            <h3>Chennai , Tamil Nadu</h3>
-          </div>
-        </div>
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/html-5.png" alt="HTML">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/css-3.png" alt="CSS">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/java-script.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/python.png" alt="Python">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/postgresql.png" alt="PostgreSQL">
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/icons8-github-100.png" alt="Git / GitHub">
+                        <h3>Git / GitHub</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/figma.png" alt="Figma">
+                        <h3>Figma</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/problem-solve.png" alt="Problem Solving">
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/teamwork.png" alt="Team Work">
+                        <h3>Team Work</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="card cta-card">
-          <h2>WANNA WORK TOGETHER? ✨</h2>
-          <p>My resume is one click away</p>
-          <a href="assets/Sathya.pdf" class="download-btn"><button class="download-btn">Download for free 🤩</button></a>
-        </div>
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass">
+                        <div class="project-img">
+                            <img src="assets/Aquarium.png" alt="The Aqua Shop">
+                        </div>
+                        <div class="project-detail">
+                            <h3>The Aqua Shop</h3>
+                            <p class="proj-desc">A responsive static website developed for a fish accessories store.</p>
+                            <ul class="proj-features">
+                                <li>Designed clean and structured layout</li>
+                                <li>Implemented responsive design using CSS</li>
+                                <li>Created user-friendly navigation</li>
+                                <li>Focused on visual clarity and modern UI</li>
+                            </ul>
+                            <div class="proj-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="https://sathyasudar1705-boop.github.io/Aquarium/" target="_blank"
+                                class="view-link">Explore <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card glass">
+                        <div class="project-img">
+                            <img src="assets/origin x.png" alt="Origin X">
+                        </div>
+                        <div class="project-detail">
+                            <h3>Origin X</h3>
+                            <p class="proj-desc">A full-stack job portal application designed to connect job seekers and
+                                employers efficiently.</p>
+                            <ul class="proj-features">
+                                <li>Developed responsive frontend using HTML, CSS, and JS</li>
+                                <li>Built backend APIs using Python (FastAPI)</li>
+                                <li>Integrated PostgreSQL for database management</li>
+                                <li>Implemented job posting and application features</li>
+                            </ul>
+                            <div class="proj-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app"
+                                target="_blank" class="view-link">Explore <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="card tools-card">
-          <p>Sathya Sudar</p>
-        </div>
-      </div>
-    </section>
-    <br />
+        <section id="photography" class="photography section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Photography</h2>
+                </div>
+                <div class="gallery-wrapper">
+                    <div class="gallery-grid">
+                        <div class="gallery-item glass"><img src="assets/photo1.jpg" alt="Photo 1"></div>
+                        <div class="gallery-item glass"><img src="assets/photo2.jpg" alt="Photo 2"></div>
+                        <div class="gallery-item glass"><img src="assets/photo3.jpg" alt="Photo 3"></div>
+                        <div class="gallery-item glass"><img src="assets/photo4.jpg" alt="Photo 4"></div>
+                        <div class="gallery-item glass"><img src="assets/photo5.jpg" alt="Photo 5"></div>
+                        <div class="gallery-item glass"><img src="assets/photo6.jpg" alt="Photo 6"></div>
+                        <div class="gallery-item glass"><img src="assets/photo7.jpg" alt="Photo 7"></div>
+                    </div>
+                    <div class="scroll-progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="logo-slider" id="skills">
-      <p class="subtitle">My Skills</p>
-      <br />
-      <div class="logo-track">
-        <div class="logo-item">
-          <img src="assets/github (1).png" alt="Amazon" />
-        </div>
-        <div class="logo-item">
-          <img src="assets/python.png" alt="I-Logo" />
-        </div>
-        <div class="logo-item">
-          <img src="assets/figma.png" alt="Pacific Life" />
-        </div>
-        <div class="logo-item"><img src="assets/css-3.png" alt="Drip" /></div>
-        <div class="logo-item">
-          <img src="assets/database.png" alt="Amazon" />
-        </div>
-        <div class="logo-item">
-          <img src="assets/problem-solve.png" alt="I-Logo" />
-        </div>
-      </div>
-    </div>
-
-    <main class="portfolio-container" id="Projects">
-      <h1 class="main-title">My Recent Works</h1>
-
-      <section class="project-row" id="kissflow">
-        <div class="project-details">
-          <h2>THE AQUA SHOP</h2>
-          <p>
-            I designed and developed a clean and user-friendly static website
-            dedicated to showcasing and purchasing fish accessories. The website
-            focuses on simplicity, smooth navigation, and visually appealing
-            layouts to enhance user experience.
-          </p>
-          <div class="tags">
-            <span>Html</span>
-            <span>Css</span>
-          </div>
-          <a
-            href="https://sathyasudar1705-boop.github.io/Aquarium/"
-            class="pages"
-            ><div class="arrow-btn">↗</div></a
-          >
-        </div>
-        <div class="project-mockup">
-          <img
-            src="assets/Gemini_Generated_Image_6hdf5y6hdf5y6hdf-removebg-preview.png"
-            alt="Kissflow Mockup"
-          />
-        </div>
-      </section>
-
-      <section class="project-row" id="jawa">
-        <div class="project-details">
-          <h2>ORIGIN-X</h2>
-          <p>
-            I developed a full-stack job portal platform where users can browse
-            job listings, view job details, and interact with an organized and
-            user-friendly interface. The application is built using HTML, CSS,
-            JavaScript for the front-end and FastAPI for the back-end, ensuring
-            efficient performance and structured API communication.
-          </p>
-          <div class="tags">
-            <span>Html</span>
-            <span>Css</span>
-            <span>JavaScript</span>
-            <span>FastAPI</span>
-          </div>
-          <a
-            href="
-https://sathyasudar1705-boop.github.io/Full_Stack_frontend/"
-            class="pages"
-            ><div class="arrow-btn">↗</div></a
-          >
-        </div>
-        <div class="project-mockup">
-          <img
-            src="assets/Gemini_Generated_Image_4ckfty4ckfty4ckf-removebg-preview.png"
-            alt="Jawa Mockup"
-          />
-        </div>
-      </section>
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-box glass">
+                    <div class="contact-info">
+                        <h2>Let's build something <br><span>Extraordinary</span></h2>
+                        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                        <div class="contact-links">
+                            <a href="mailto:sathyasudar1705@gmail.com"><i data-lucide="mail"></i>
+                                sathyasudar1705@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/sathya-sudar-29bb00374" target="_blank"><i
+                                    data-lucide="linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/sathyasudar1705-boop" target="_blank"><i
+                                    data-lucide="github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section class="archive-section" id="photos">
-      <div class="header-content">
-        <h1>Finding stories in every shot.</h1>
-        <p>I enjoy capturing meaningful moments through photography.</p>
-      </div>
-
-      <div class="cards-container">
-        <div class="cards" style="--rotation: -10deg; --x: -180px; --y: 20px">
-          <div class="label">Web Accessibility Test</div>
-          <img src="assets/IMG_20251111_175509.jpg" alt="Work 1" />
-        </div>
-
-        <div class="cards" style="--rotation: -5deg; --x: -90px; --y: 0px">
-          <div class="label">VR Simulator UIs</div>
-          <img src="assets/IMG_20251119_193312.jpg" alt="Work 2" />
-        </div>
-
-        <div class="cards" style="--rotation: 0deg; --x: 0px; --y: -20px">
-          <div class="label">Fashion Magazine</div>
-          <img src="assets/IMG_20251128_205749.jpg" alt="Work 3" />
-        </div>
-
-        <div class="cards" style="--rotation: 5deg; --x: 90px; --y: 0px">
-          <div class="label">Product Branding</div>
-          <img src="assets/IMG_20251206_004953 (2).jpg" alt="Work 4" />
-        </div>
-
-        <div class="cards" style="--rotation: 10deg; --x: 180px; --y: 20px">
-          <div class="label">B2B Website Design</div>
-          <img src="assets/IMG_20260101_185746.jpg" alt="Work 5" />
-        </div>
-      </div>
-    </section>
-
-    <section class="connect-container" id="connect">
-      <div class="content-wrapper">
-        <h1>Love my work?</h1>
-        <p>Let's Connect!</p>
-        <div class="social-links">
-        <a href="https://www.linkedin.com/in/sathya-sudar-29bb00374" class="icon-link"
-            ><img class="icon-link" src="assets/linkedin.png"
-          /></a>
-          <a href="https://github.com/sathyasudar1705-boop" class="icon-link"
-            ><img class="icon-link" src="assets/social.png"
-          /></a>
-        </div>
-      </div>
-    </section>
-
-    <script src="new.js">
-          function contactClick() {
-          alert("Contact button clicked!");
-      }
-      // Function to handle scroll reveal animations
-      const revealElements = () => {
-          const observer = new IntersectionObserver((entries) => {
-              entries.forEach(entry => {
-                  if (entry.isIntersecting) {
-                      entry.target.animate([
-                          { opacity: 0, transform: 'translateY(50px)' },
-                          { opacity: 1, transform: 'translateY(0)' }
-                      ], {
-                          duration: 800,
-                          easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-                          fill: 'forwards'
-                      });
-                      observer.unobserve(entry.target);
-                  }
-              });
-          }, { threshold: 0.1 });
-
-          // Apply to headers and text blocks
-          document.querySelectorAll('h1, h2, p, .project-card').forEach(el => {
-              el.style.opacity = "0";
-              observer.observe(el);
-          });
-      };
-
-      // Custom Cursor Effect (Optional but found in high-end portfolios)
-      const initCustomCursor = () => {
-          const cursor = document.createElement('div');
-          cursor.style.width = '20px';
-          cursor.style.height = '20px';
-          cursor.style.border = '1px solid white';
-          cursor.style.borderRadius = '50%';
-          cursor.style.position = 'fixed';
-          cursor.style.pointerEvents = 'none';
-          cursor.style.zIndex = '9999';
-          cursor.style.transition = 'transform 0.1s ease';
-          document.body.appendChild(cursor);
-
-          document.addEventListener('mousemove', (e) => {
-              cursor.style.left = e.clientX - 10 + 'px';
-              cursor.style.top = e.clientY - 10 + 'px';
-          });
-      };
-
-      document.addEventListener('DOMContentLoaded', () => {
-          revealElements();
-          // initCustomCursor(); // Uncomment to enable
-      });
 
 
-
-
- 
-
-let currentIndex = 0;
-const imgElement = document.getElementById('gallery-img');
-const captionElement = document.getElementById('gallery-caption');
-
-function rotateGallery() {
-    currentIndex = (currentIndex + 1) % galleryData.length;
-    
-    // Add a quick fade out effect
-    imgElement.style.opacity = 0;
-    
-    setTimeout(() => {
-        imgElement.src = galleryData[currentIndex].src;
-        captionElement.innerText = galleryData[currentIndex].caption;
-        imgElement.style.opacity = 1;
-    }, 500);
-}
-
-// Change image every 3 seconds
-setInterval(rotateGallery, 3000);
-
-
-
-// Selecting all card elements
-const cards = document.querySelectorAll('.card');
-
-cards.forEach((card, index) => {
-    card.addEventListener('mouseenter', () => {
-        // Optional: darken other cards when one is hovered
-        cards.forEach(c => {
-            if (c !== card) c.style.opacity = "1";
-        });
-    });
-
-    card.addEventListener('mouseleave', () => {
-        // Reset opacity for all cards
-        cards.forEach(c => {
-            c.style.opacity = "1";
-        });
-    });
-});
-
-
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
     </script>
-  </body>
+</body>
+
 </html>
