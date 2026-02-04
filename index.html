@@ -1,137 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Origin X</title>
-    <link rel="stylesheet" href="/css/index.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <h1 class="logo">Origin <span>X</span></h1>
-      <a href="/html/jobs.html" class="nav1">Jobs</a>
-      <a href="/html/interview.html" class="nav1">Interview Preparation</a>
-      <div class="search">
-        <input type="text" placeholder="Search Jobs Here" />
-        <button></button>
-      </div>
-      <div class="message">
-        <img src="/assests/messenger.png" alt="message" />
-        <p>message</p>
-      </div>
-      <div class="account">
-        <a href="/html/profile.html"
-          ><img src="/assests/user.png" alt="user"
-        /></a>
-      </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathyasudar | Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Sathyasudar, a Software Development Trainee from Tenkasi at Freshworks STS Software Academy, specialized in HTML, CSS, JavaScript, and Python.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div id="cursor-glow"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">SATHYASUDAR<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#photography">Photography</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i data-lucide="menu"></i>
+            </div>
+        </div>
     </nav>
 
-    <div class="main">
-      <div class="sidebar">
-        <p>Last updated yesterday</p>
-        <a href="/html/profile.html" class="update">Update Profile</a>
-        <a href="#home" class="items"> Home</a>
-        <a href="../html/jobs.html" class="items"> Jobs</a>
-        <a href="/html/companies.html" class="items"> Companies</a>
-        <a href="/html/part.html" class="items"> Part Time Jobs</a>
-        <a href="logout" class="logout">log out</a>
-      </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h2 class="reveal-text">Hello, I'm</h2>
+                    <h1 class="glitch" data-text="Sathyasudar">Sathyasudar</h1>
+                    <h3 class="typewriter">Software Developer</h3>
 
-      <div class="container">
-        <div class="box1">
-          <h1>Connect Talent With Opportunities</h1>
-          <p>
-            Join thousands of professionals finding their dream jobs and
-            building meaningful connections in their careers
-          </p>
-        </div>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn primary">View Work</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                        <a href="assets/Sathya_Sudar_Resume.pdf" download="Sathya_Sudar_Resume.pdf"
+                            class="btn secondary">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="blob-container">
+                        <div class="blob"></div>
+                        <img src="assets/IMG_20260101_174429.jpg" alt="Sathyasudar" id="profile-img">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
 
-        <div class="box2">
-          <div class="no no1">
-            <h1>10k+</h1>
-            <p class="show">Active Jobs</p>
-          </div>
-          <div class="no no2">
-            <h1>50k+</h1>
-            <p class="show">Job Keepers</p>
-          </div>
-          <div class="no no3">
-            <h1>5k+</h1>
-            <p class="show">Companies</p>
-          </div>
-        </div>
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-visual">
+                        <div class="image-wrapper glass">
+                            <img src="assets/IMG_20251113_161412.jpg" alt="Sathyasudar" class="about-img">
 
-        <div class="box3">
-          <h1>Build Your Resume!</h1>
-          <ol>
-            <li>Go to sign in page</li>
-            <li>Choose Job keepers or Employers</li>
-            <li>Fill up the page</li>
-          </ol>
-          <a href="/html/profile.html">Click Here</a>
-        </div>
-        <div class="box4">
-          <h1>Jobs For You:</h1>
-          <div class="b1 b">
-            <img src="/assests/developer.png" alt="img" />
-            <p>1 Days ago</p>
-            <h2>Full Stack Developer</h2>
-            <h3>Skills:</h3>
-            <h4 class="Skills">Front-End,Back-End</h4>
-            <img src="/assests/location.png" alt="location" />
-            <h5>Chennai</h5>
-          </div>
-          <div class="b2 b">
-            <img src="/assests/software.png" alt="img" />
-            <p>2 Weeks ago</p>
-            <h2>Frontend Developer</h2>
-            <h3>Skills:</h3>
-            <h4 class="Skills">Front-end</h4>
-            <img src="/assests/location.png" alt="location" />
-            <h5>Kerala</h5>
-          </div>
-          <div class="b3 b">
-            <img src="/assests/ui.png" alt="img" />
-            <p>4 Days ago</p>
-            <h2>UI/UX Designer</h2>
-            <h3>Skills:</h3>
-            <h4 class="Skills">UI/UX Design</h4>
-            <img src="/assests/location.png" alt="location" />
-            <h5>Bangalore</h5>
-          </div>
-        </div>
-      </div>
-    </div>
+                            <div class="location-badge glass">
+                                <i data-lucide="map-pin"></i>
+                                <span>Tenkasi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="section-header">
+                            <h2>About Me</h2>
+                        </div>
+                        <h2 class="about-tagline">Building <span>meaningful</span> digital solutions with purpose.</h2>
+                        <p>I am a Software Development Trainee from Tenkasi, currently training at <strong>Freshworks
+                                STS Software Academy</strong>. I enjoy building responsive and user-friendly web
+                            applications using HTML, CSS, JavaScript, and Python.</p>
+                        <p>My interest in technology comes from solving real-world problems and continuously improving
+                            my skills. I believe in writing clean code, learning consistently, and growing through
+                            practical experience.</p>
 
-    <footer>
-      <div class="container2">
-        <div class="con c1">
-          <h1 class="logo">Origin <span>X</span></h1>
-          <p>Opportunities You Deserve, Just a Click Away.</p>
-        </div>
-        <div class="con c2">
-          <h4>Usefull Links</h4>
-          <a href="">Browse Jobs</a>
-          <a href="">Resume Builder</a>
-          <a href="">Career Advise</a>
-          <a href="">Part Time Jobs</a>
-        </div>
-        <div class="con c3">
-          <h4>Privacy & Policy</h4>
-          <a href="">Terms of Us</a>
-          <a href="">Privacy Policy</a>
-        </div>
-        <div class="con c4">
-          <h3>Contact Information</h3>
-          <img src="/assests/phone.png" alt="phone" /><br />
-          <img src="/assests/message.png" alt="mail" />
-          <p>91+ 9344961585</p>
-          <p>OriginX.gmail.com</p>
-        </div>
-      </div>
-    </footer>
-    <footer class="final">
-      <p>&copy; 2025 Origin X. All rights reserved.</p>
-    </footer>
-  </body>
+                        <div class="about-tags">
+                            <span class="tag">Problem Solver</span>
+                            <span class="tag">Curious Thinker</span>
+                            <span class="tag">Continuous Learner</span>
+                        </div>
+
+                        <div class="about-action">
+                            <a href="#contact" class="btn primary">Let's Connect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/html-5.png" alt="HTML">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/css-3.png" alt="CSS">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/java-script.png" alt="JavaScript">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/python.png" alt="Python">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/postgresql.png" alt="PostgreSQL">
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/icons8-github-100.png" alt="Git / GitHub">
+                        <h3>Git / GitHub</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/figma.png" alt="Figma">
+                        <h3>Figma</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/problem-solve.png" alt="Problem Solving">
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="skill-card glass" data-tilt>
+                        <img src="assets/teamwork.png" alt="Team Work">
+                        <h3>Team Work</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card glass">
+                        <div class="project-img">
+                            <img src="assets/Aquarium.png" alt="The Aqua Shop">
+                        </div>
+                        <div class="project-detail">
+                            <h3>The Aqua Shop</h3>
+                            <p class="proj-desc">A responsive static website developed for a fish accessories store.</p>
+                            <ul class="proj-features">
+                                <li>Designed clean and structured layout</li>
+                                <li>Implemented responsive design using CSS</li>
+                                <li>Created user-friendly navigation</li>
+                                <li>Focused on visual clarity and modern UI</li>
+                            </ul>
+                            <div class="proj-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="https://sathyasudar1705-boop.github.io/Aquarium/" target="_blank"
+                                class="view-link">Explore <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card glass">
+                        <div class="project-img">
+                            <img src="assets/origin x.png" alt="Origin X">
+                        </div>
+                        <div class="project-detail">
+                            <h3>Origin X</h3>
+                            <p class="proj-desc">A full-stack job portal application designed to connect job seekers and
+                                employers efficiently.</p>
+                            <ul class="proj-features">
+                                <li>Developed responsive frontend using HTML, CSS, and JS</li>
+                                <li>Built backend APIs using Python (FastAPI)</li>
+                                <li>Integrated PostgreSQL for database management</li>
+                                <li>Implemented job posting and application features</li>
+                            </ul>
+                            <div class="proj-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app"
+                                target="_blank" class="view-link">Explore <i data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photography" class="photography section-padding">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Photography</h2>
+                </div>
+                <div class="gallery-wrapper">
+                    <div class="gallery-grid">
+                        <div class="gallery-item glass"><img src="assets/photo1.jpg" alt="Photo 1"></div>
+                        <div class="gallery-item glass"><img src="assets/photo2.jpg" alt="Photo 2"></div>
+                        <div class="gallery-item glass"><img src="assets/photo3.jpg" alt="Photo 3"></div>
+                        <div class="gallery-item glass"><img src="assets/photo4.jpg" alt="Photo 4"></div>
+                        <div class="gallery-item glass"><img src="assets/photo5.jpg" alt="Photo 5"></div>
+                        <div class="gallery-item glass"><img src="assets/photo6.jpg" alt="Photo 6"></div>
+                        <div class="gallery-item glass"><img src="assets/photo7.jpg" alt="Photo 7"></div>
+                    </div>
+                    <div class="scroll-progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-box glass">
+                    <div class="contact-info">
+                        <h2>Let's build something <br><span>Extraordinary</span></h2>
+                        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                        <div class="contact-links">
+                            <a href="mailto:sathyasudar1705@gmail.com"><i data-lucide="mail"></i>
+                                sathyasudar1705@gmail.com</a>
+                            <a href="https://www.linkedin.com/in/sathya-sudar-29bb00374" target="_blank"><i
+                                    data-lucide="linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/sathyasudar1705-boop" target="_blank"><i
+                                    data-lucide="github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
 </html>
