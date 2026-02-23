@@ -2,20 +2,46 @@
 // Gallery Toggle
 function toggleGallery() {
     const wrapper = document.getElementById('galleryWrapper');
-    const btn = document.getElementById('galleryToggle');
+    const btn = document.getElementById('galleryMoreBtn');
     const textEl = btn.querySelector('.toggle-text');
 
     if (wrapper.style.display === 'none') {
         wrapper.style.display = 'block';
         btn.classList.add('active');
-        textEl.textContent = 'Hide My Shots';
-        // Re-init lucide icons for eye-off
-        if (typeof lucide !== 'undefined') lucide.createIcons();
+        textEl.textContent = 'Less Pictures';
+
+        // Trigger reveal animation for items
+        const items = wrapper.querySelectorAll('.masonry-item');
+        items.forEach((item, index) => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                item.style.transition = 'all 0.5s ease ' + (index * 0.05) + 's';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+            }, 10);
+        });
+
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
         wrapper.style.display = 'none';
         btn.classList.remove('active');
-        textEl.textContent = 'View My Shots';
+        textEl.textContent = 'More Pictures';
+        document.getElementById('photography').scrollIntoView({ behavior: 'smooth' });
     }
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+// Achievements Accordion Toggle
+function toggleAchievements() {
+    const box = document.getElementById('achievementsBox');
+    const toggle = document.getElementById('achievementsToggle');
+
+    box.classList.toggle('active');
+    toggle.classList.toggle('active');
+
+    // Refresh icons if needed
+    if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 // Professional Scroll Reveal System
@@ -108,13 +134,13 @@ window.addEventListener('scroll', () => {
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+        // e.preventDefault(); // Temporarily disabled for direct Formspree debugging
         const btn = contactForm.querySelector('button');
         const span = btn.querySelector('span');
         const originalText = span.textContent;
         const formData = new FormData(contactForm);
 
-        const targetEmail = 'sathyasudar.vasagam@fssa.freshworks.com';
+        const targetEmail = 'sathyasudar1705@gmail.com';
 
         // Show loading state
         span.textContent = 'Sending...';
@@ -130,15 +156,18 @@ if (contactForm) {
             });
 
             if (response.ok) {
+                console.log("Formspree Success:", await response.json());
                 span.textContent = 'Message Sent!';
                 btn.style.background = '#10b981';
                 contactForm.reset();
                 if (typeof lucide !== 'undefined') lucide.createIcons();
             } else {
-                throw new Error('Service not active');
+                const errorData = await response.json();
+                console.error("Formspree Error Response:", errorData);
+                throw new Error(errorData.error || 'Service not active');
             }
         } catch (error) {
-            console.error('Submission Error:', error);
+            console.error('Submission Processing Error:', error);
 
             // FAILOVER: mailto logic
             const name = formData.get('name') || 'Someone';
@@ -201,7 +230,7 @@ const projectData = {
         longDesc: 'A massive full-stack undertaking implementing complex backend APIs with FastAPI, real-time database management with PostgreSQL, and a buttery-smooth frontend experience.',
         tech: ['Python', 'FastAPI', 'PostgreSQL', 'JavaScript', 'Tailwind CSS'],
         link: 'https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app',
-        img: 'assets/origin x.png'
+        img: 'assets/Screenshot 2026-02-23 180540.png'
     }
 };
 
@@ -288,3 +317,29 @@ if (modal) {
         if (e.key === 'Escape') closeModal();
     });
 }
+
+// Video Hover Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const videoProjects = [
+        { card: '.project-card:nth-child(1)', video: 'aquaShopVideo' },
+        { card: '.project-card:nth-child(2)', video: 'originXVideo' }
+    ];
+
+    videoProjects.forEach(proj => {
+        const cardEl = document.querySelector(proj.card);
+        const videoEl = document.getElementById(proj.video);
+
+        if (cardEl && videoEl) {
+            cardEl.addEventListener('mouseenter', () => {
+                videoEl.play().catch(error => {
+                    console.log("Video play interrupted or blocked:", error);
+                });
+            });
+
+            cardEl.addEventListener('mouseleave', () => {
+                videoEl.pause();
+                videoEl.currentTime = 0; // Reset video
+            });
+        }
+    });
+});

@@ -31,8 +31,9 @@
                 <!-- 3-Column Grid: Experience / Contact / Education -->
                 <!-- Section 1: Tools | Photo | Soft Skills -->
                 <div class="resume-bottom-row">
+                    <!-- Left Column: Skills & Location -->
                     <div class="resume-tools reveal reveal-up">
-                        <h2 class="resume-heading">My Skills:</h2>
+                        <h2 class="resume-heading">MY SKILLS:</h2>
                         <div class="tools-grid">
                             <div class="tool-icon glass" data-label="HTML5"><img src="assets/html-5.png" alt="HTML">
                             </div>
@@ -62,17 +63,19 @@
                         </div>
                     </div>
 
+                    <!-- Center Column: Photo -->
                     <div class="resume-photo-hero reveal reveal-up">
                         <div class="photo-wrapper">
-                            <img src="assets/IMG_20260215_005451.jpg" alt="Sathyasudar">
+                            <img src="assets/IMG_20260223_230502.png" alt="Sathyasudar">
                             <div class="photo-name-overlay">
                                 <h1>Sathyasudar</h1>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Right Column: Core Competencies -->
                     <div class="resume-core-competencies reveal reveal-up">
-                        <h2 class="resume-heading">Core Competencies:</h2>
+                        <h2 class="resume-heading">CORE COMPETENCIES:</h2>
                         <ul class="core-competencies-list">
                             <li>Problem Solving</li>
                             <li>Team Work</li>
@@ -87,101 +90,90 @@
                             <li>Adaptable</li>
                         </ul>
                     </div>
-                </div>
+                </div> <!-- End resume-bottom-row -->
+            </div> <!-- End Hero Container -->
+        </section>
 
-                <!-- Section 2: About Me Bio -->
-                <div class="resume-bio reveal reveal-up">
+        <!-- New Full-Width White Section for Bio & Achievements -->
+        <section id="about" class="bio-full-white reveal">
+            <div class="container">
+                <div class="resume-bio">
+                    <h2 class="resume-heading"><i data-lucide="user"></i> About Me:</h2>
                     <p>I am <strong>Sathya Sudar</strong>, a Software Development Trainee from Tenkasi, currently
-                        training at <strong>Freshworks STS Software Academy</strong>. I enjoy building responsive and
-                        user-friendly web applications using HTML, CSS, JavaScript, and Python. I am passionate about
-                        technology because I like solving real-world problems and continuously improving my skills. I
-                        always focus on writing clean code, learning consistently, and gaining knowledge through
-                        practical experience.</p>
+                        training at <strong>Freshworks STS Software Academy</strong>. I enjoy building responsive
+                        and user-friendly web applications using HTML, CSS, JavaScript, and Python. I am passionate
+                        about technology because I like solving real-world problems and continuously improving my
+                        skills. I always focus on writing clean code, learning consistently, and gaining knowledge
+                        through practical experience.</p>
                     <p>I completed my 12th standard in 2022. After that, I worked in part-time jobs for three years,
                         which helped me develop discipline, responsibility, and communication skills. My father is a
                         farmer and my mother is a housewife. I have one brother who is studying at Anna University.</p>
                     <p>In the beginning, I did not have any coding knowledge. After joining the academy, I started
-                        learning web development from the basics and improved my technical skills step by step. During
-                        my learning journey, I built two projects — one static website and one full-stack project —
-                        which helped me understand real-world development.</p>
-                    <p>My goal is to become a skilled full-stack developer and get placed in a good company where I can
-                        grow, learn new technologies, and contribute to meaningful projects.</p>
+                        learning web development from the basics and improved my technical skills step by step.
+                        During my learning journey, I built two projects — one static website and one full-stack
+                        project — which helped me understand real-world development.</p>
+                    <p>My goal is to become a skilled full-stack developer and get placed in a good company where I
+                        can grow, learn new technologies, and contribute to meaningful projects.</p>
 
-                    <!-- Achievements Section (Hidden by default, shown on hover) -->
-                    <div class="achievements-box">
-                        <h3 class="achievements-title">🏆 Achievements</h3>
-                        <ul class="achievements-list">
-                            <li>Started my journey without any prior coding knowledge and successfully learned
-                                programming through self-learning and consistent practice.</li>
-                            <li>Overcame stage fear and improved my confidence in communication and presentations.</li>
-                            <li>Transitioned from 3 years of manual labor work to utilizing new career opportunities in
-                                the tech field.</li>
-                            <li>Significantly improved my problem-solving skills through real-time projects and
-                                continuous learning.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Section 3: Experience | Contact | Education -->
-                <div class="resume-grid">
-                    <div class="resume-col reveal reveal-up">
-                        <h2 class="resume-heading">🎓 Education & Training:</h2>
-                        <div class="resume-item">
-                            <span class="resume-date">2025 - 2026</span>
-                            <div class="resume-item-icon"><i data-lucide="graduation-cap"></i></div>
-                            <div>
-                                <h4>Full Stack Trainee</h4>
-                                <p>Freshworks STS Software Academy, Chennai</p>
+                    <!-- Achievements Section -->
+                    <div class="achievements-accordion">
+                        <button class="achievements-toggle" id="achievementsToggle" onclick="toggleAchievements()">
+                            <div class="title-with-icon">
+                                <i data-lucide="award"></i>
+                                <span>Achievements</span>
                             </div>
-                        </div>
-                        <div class="resume-item">
-                            <span class="resume-date">2021 - 2022</span>
-                            <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
-                            <div>
-                                <h4>HSC</h4>
-                                <p>PAHSS, Avudaiyanoor, Tenkasi</p>
-                            </div>
-                        </div>
-                        <div class="resume-item">
-                            <span class="resume-date">2019 - 2020</span>
-                            <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
-                            <div>
-                                <h4>SSLC</h4>
-                                <p>NHHS, Keelapavoor, Tenkasi</p>
-                            </div>
+                            <i data-lucide="chevron-down" class="chevron-icon"></i>
+                        </button>
+                        <div class="achievements-box" id="achievementsBox">
+                            <ul class="achievements-list">
+                                <li><i data-lucide="check-circle"></i> Started my journey without any prior coding
+                                    knowledge and successfully learned programming through self-learning and
+                                    consistent practice.</li>
+                                <li><i data-lucide="check-circle"></i> Overcame stage fear and improved my confidence
+                                    in communication and presentations.</li>
+                                <li><i data-lucide="check-circle"></i> Transitioned from 3 years of manual labor work
+                                    to utilizing new career opportunities in technology.</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="resume-col reveal reveal-up">
-                        <h2 class="resume-heading">Contact Me:</h2>
-                        <div class="resume-item">
-                            <div class="resume-item-icon"><i data-lucide="mail"></i></div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>sathyasudar1705@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="resume-item">
-                            <div class="resume-item-icon"><i data-lucide="linkedin"></i></div>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p><a href="https://www.linkedin.com/in/sathya-sudar-29bb00374" target="_blank"
-                                        style="color: var(--text-muted); text-decoration: none;">Sathya Sudar</a></p>
-                            </div>
-                        </div>
-                        <div class="resume-item">
-                            <div class="resume-item-icon"><i data-lucide="github"></i></div>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p><a href="https://github.com/sathyasudar1705-boop" target="_blank"
-                                        style="color: var(--text-muted); text-decoration: none;">sathyasudar1705-boop</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+        </section>
+
+
+
+        <!-- Section 3: Experience | Contact | Education -->
+        <div class="resume-grid shift-right-150">
+            <div class="resume-col reveal reveal-up">
+                <h2 class="resume-heading"><i data-lucide="graduation-cap"></i> Education & Training:</h2>
+                <div class="resume-item">
+                    <span class="resume-date"><strong>2025 - Present</strong></span>
+                    <div class="resume-item-icon"><i data-lucide="graduation-cap"></i></div>
+                    <div>
+                        <h4><strong>Full Stack Trainee</strong></h4>
+                        <p><strong>Freshworks STS Software Academy, Chennai</strong></p>
+                    </div>
+                </div>
+                <div class="resume-item">
+                    <span class="resume-date"><strong>2021 - 2022</strong></span>
+                    <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
+                    <div>
+                        <h4><strong>HSC</strong></h4>
+                        <p><strong>PAHSS, Avudaiyanoor, Tenkasi</strong></p>
+                    </div>
+                </div>
+                <div class="resume-item">
+                    <span class="resume-date"><strong>2019 - 2020</strong></span>
+                    <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
+                    <div>
+                        <h4><strong>SSLC</strong></h4>
+                        <p><strong>NHHS, Keelapavoor, Tenkasi</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
         </section>
 
         <!-- ======================== PROJECTS SECTION ======================== -->
@@ -195,7 +187,10 @@
                     <!-- Card 1: Aqua Shop -->
                     <div class="project-card reveal reveal-up">
                         <div class="project-img">
-                            <img src="assets/Aquarium.png" alt="The Aqua Shop">
+                            <img src="assets/Aquarium.png" alt="The Aqua Shop" class="project-poster">
+                            <video class="project-video" id="aquaShopVideo" muted loop playsinline>
+                                <source src="assets/Screen Recording 2026-02-23 180101.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="project-info">
                             <div class="project-info-left">
@@ -214,12 +209,23 @@
                                 <span>CSS</span>
                             </div>
                         </div>
+                        <div class="project-story">
+                            <div class="story-content">
+                                <i data-lucide="message-square-quote" class="story-icon"></i>
+                                <p>While building this project, I found it difficult to properly fit the video on the
+                                    landing page. After that, I referred to some websites and learned how to adjust it
+                                    correctly. Finally, I fixed the video and made it fit well on the landing page.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Card 2: Origin X -->
                     <div class="project-card reveal reveal-up">
                         <div class="project-img">
-                            <img src="assets/origin x.png" alt="Origin X">
+                            <img src="assets/Screenshot 2026-02-23 180540.png" alt="Origin X" class="project-poster">
+                            <video class="project-video" id="originXVideo" muted loop playsinline>
+                                <source src="assets/Screen Recording 2026-02-23 180817.mp4" type="video/mp4">
+                            </video>
                         </div>
                         <div class="project-info">
                             <div class="project-info-left">
@@ -242,6 +248,15 @@
                                 <span>PostgreSQL</span>
                             </div>
                         </div>
+                        <div class="project-story">
+                            <div class="story-content">
+                                <i data-lucide="message-square-quote" class="story-icon"></i>
+                                <p>When I was building this project, I found it difficult to handle the API and add the
+                                    PDF generation feature. I faced many errors while implementing it. It took me 2 days
+                                    to fix those errors. Finally, I successfully added the PDF generation feature to the
+                                    project.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,26 +266,59 @@
         <section id="photography" class="photography section-padding reveal">
             <div class="container">
                 <div class="section-header center reveal reveal-up">
+                    <span class="subtitle">MOMENTS</span>
                     <h2>Photography</h2>
-                    <p class="photo-subtitle">I love Photography 📸</p>
-                    <button class="gallery-toggle-btn" id="galleryToggle" onclick="toggleGallery()">
-                        <span class="toggle-text">View My Shots</span>
-                        <i data-lucide="eye"></i>
+                    <p class="photo-subtitle">Capturing the world through my lens <i data-lucide="camera"
+                            class="photo-icon"></i></p>
+                </div>
+
+                <!-- Featured Hero Duo -->
+                <div class="photo-hero reveal reveal-up">
+                    <div class="photo-hero-main">
+                        <img src="assets/portfolio/IMG_20260126_151428.jpg" alt="Featured Shot 1">
+                        <div class="photo-overlay"><span>January 2026</span></div>
+                    </div>
+                    <div class="photo-hero-side">
+                        <img src="assets/portfolio/IMG_20251112_175201.jpg" alt="Featured Shot 2">
+                        <div class="photo-overlay"><span>November 2025</span></div>
+                    </div>
+                </div>
+
+                <!-- More Pictures Toggle -->
+                <div class="photo-toggle-wrap reveal reveal-up">
+                    <button class="photo-more-btn" id="galleryMoreBtn" onclick="toggleGallery()">
+                        <i data-lucide="images"></i>
+                        <span class="toggle-text">View All Photos</span>
+                        <i class="toggle-chevron" data-lucide="chevron-down"></i>
                     </button>
                 </div>
-                <div class="gallery-wrapper" id="galleryWrapper" style="display: none;">
-                    <div class="gallery-masonry">
-                        <div class="masonry-item"><img src="assets/photo1.jpg" alt="Photo 1"></div>
-                        <div class="masonry-item"><img src="assets/photo2.jpg" alt="Photo 2"></div>
-                        <div class="masonry-item"><img src="assets/photo3.jpg" alt="Photo 3"></div>
-                        <div class="masonry-item"><img src="assets/photo4.jpg" alt="Photo 4"></div>
-                        <div class="masonry-item"><img src="assets/photo5.jpg" alt="Photo 5"></div>
-                        <div class="masonry-item"><img src="assets/photo6.jpg" alt="Photo 6"></div>
-                        <div class="masonry-item"><img src="assets/photo7.jpg" alt="Photo 7"></div>
+
+                <!-- Full Gallery Grid -->
+                <div class="photo-grid-wrap" id="galleryWrapper" style="display:none;">
+                    <div class="photo-grid">
+                        <div class="photo-cell"><img src="assets/portfolio/IMG20250601120321.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG20250619083451.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251109_160027.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251212_065342.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251212_070317.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251213_084927.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251223_130459.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251223_130901.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251227_131013.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251230_181706.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260101_185611.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260115_085801.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260115_142910.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260118_122035.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260131_181418.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251112_175201.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260126_151428.jpg" alt="Photo"></div>
+
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- ======================== CONTACT SECTION ======================== -->
         <section id="contact" class="contact section-padding reveal">
@@ -283,12 +331,11 @@
                             opportunities and creative collaborations.</p>
 
                         <div class="contact-cards-grid">
-                            <a href="mailto:sathyasudar.vasagam@fssa.freshworks.com"
-                                class="contact-card reveal reveal-scale">
+                            <a href="mailto:sathyasudar1705@gmail.com" class="contact-card reveal reveal-scale">
                                 <div class="card-icon"><i data-lucide="mail"></i></div>
                                 <div class="card-text">
                                     <span>Email Me</span>
-                                    <strong>sathyasudar.vasagam@fssa.freshworks.com</strong>
+                                    <strong>sathyasudar1705@gmail.com</strong>
                                 </div>
                             </a>
                             <a href="https://www.linkedin.com/in/sathya-sudar-29bb00374" target="_blank"
@@ -311,7 +358,7 @@
                     </div>
 
                     <div class="contact-form-container reveal reveal-right">
-                        <form class="contact-form" action="https://formspree.io/f/mldevpba" method="POST">
+                        <form class="contact-form" action="https://formspree.io/f/xreaolgo" method="POST">
                             <div class="form-group">
                                 <label>Your Name</label>
                                 <input type="text" name="name" placeholder="John Doe" required>
