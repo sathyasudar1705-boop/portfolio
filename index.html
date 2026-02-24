@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Syne:wght@700;800&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -20,7 +20,7 @@
 
     <header class="top-nav">
         <div class="container nav-container">
-            <div class="logo">SATHYASUDAR<span> V</span></div>
+            <div class="logo animate-name">SATHYASUDAR<span> V</span></div>
         </div>
     </header>
 
@@ -68,7 +68,7 @@
                         <div class="photo-wrapper">
                             <img src="assets/IMG_20260223_230502.png" alt="Sathyasudar">
                             <div class="photo-name-overlay">
-                                <h1>Sathyasudar</h1>
+                                <h1 class="animate-name">Sathyasudar</h1>
                             </div>
                         </div>
                     </div>
@@ -142,119 +142,140 @@
 
 
 
-        <!-- Section 3: Experience | Contact | Education -->
-        <div class="resume-grid shift-right-150">
-            <div class="resume-col reveal reveal-up">
-                <h2 class="resume-heading"><i data-lucide="graduation-cap"></i> Education & Training:</h2>
-                <div class="resume-item">
-                    <span class="resume-date"><strong>2025 - Present</strong></span>
-                    <div class="resume-item-icon"><i data-lucide="graduation-cap"></i></div>
-                    <div>
-                        <h4><strong>Full Stack Trainee</strong></h4>
-                        <p><strong>Freshworks STS Software Academy, Chennai</strong></p>
-                    </div>
-                </div>
-                <div class="resume-item">
-                    <span class="resume-date"><strong>2021 - 2022</strong></span>
-                    <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
-                    <div>
-                        <h4><strong>HSC</strong></h4>
-                        <p><strong>PAHSS, Avudaiyanoor, Tenkasi</strong></p>
-                    </div>
-                </div>
-                <div class="resume-item">
-                    <span class="resume-date"><strong>2019 - 2020</strong></span>
-                    <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
-                    <div>
-                        <h4><strong>SSLC</strong></h4>
-                        <p><strong>NHHS, Keelapavoor, Tenkasi</strong></p>
+        <!-- Section 3: Education & Training -->
+        <section id="education" class="bio-full-white reveal">
+            <div class="container">
+                <div class="resume-bio">
+                    <div class="resume-grid">
+                        <div class="resume-col reveal reveal-up">
+                            <h2 class="resume-heading"><i data-lucide="graduation-cap"></i> Education & Training:</h2>
+                            <div class="resume-item">
+                                <span class="resume-date"><strong>2025 - Present</strong></span>
+                                <div class="resume-item-icon"><i data-lucide="graduation-cap"></i></div>
+                                <div>
+                                    <h4><strong>Full Stack Trainee</strong></h4>
+                                    <p><strong>Freshworks STS Software Academy, Chennai</strong></p>
+                                </div>
+                                <div class="resume-hover-img-container">
+                                    <img src="assets/DSC00653-2.jpg" alt="Academy" class="resume-hover-img">
+                                </div>
+                            </div>
+                            <div class="resume-item">
+                                <span class="resume-date"><strong>2021 - 2022</strong></span>
+                                <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
+                                <div>
+                                    <h4><strong>HSC</strong></h4>
+                                    <p><strong>PAHSS, Avudaiyanoor, Tenkasi</strong></p>
+                                </div>
+                                <div class="resume-hover-img-container">
+                                    <img src="assets/IMG_20260224_221444.jpg" alt="HSC" class="resume-hover-img">
+                                </div>
+                            </div>
+                            <div class="resume-item">
+                                <span class="resume-date"><strong>2019 - 2020</strong></span>
+                                <div class="resume-item-icon"><i data-lucide="book-open"></i></div>
+                                <div>
+                                    <h4><strong>SSLC</strong></h4>
+                                    <p><strong>NHHS, Keelapavoor, Tenkasi</strong></p>
+                                </div>
+                                <div class="resume-hover-img-container">
+                                    <img src="assets/IMG_20260224_221423.jpg" alt="SSLC" class="resume-hover-img">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-        </div>
         </section>
 
         <!-- ======================== PROJECTS SECTION ======================== -->
-        <section id="projects" class="projects section-padding reveal">
+        <section id="projects" class="bio-full-white reveal">
             <div class="container">
-                <div class="section-header reveal reveal-up">
-                    <span class="subtitle">MY WORK</span>
-                    <h2>Recent Projects</h2>
-                </div>
-                <div class="projects-grid stagger-container">
-                    <!-- Card 1: Aqua Shop -->
-                    <div class="project-card reveal reveal-up">
-                        <div class="project-img">
-                            <img src="assets/Aquarium.png" alt="The Aqua Shop" class="project-poster">
-                            <video class="project-video" id="aquaShopVideo" muted loop playsinline>
-                                <source src="assets/Screen Recording 2026-02-23 180101.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-info-left">
-                                <h3>The Aqua Shop</h3>
-                                <p>Web Design, Frontend</p>
-                            </div>
-                            <a href="https://sathyasudar1705-boop.github.io/Aquarium/" target="_blank"
-                                class="project-arrow">
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="project-hover-detail">
-                            <p>A responsive static website developed for a fish accessories store.</p>
-                            <div class="proj-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-                        </div>
-                        <div class="project-story">
-                            <div class="story-content">
-                                <i data-lucide="message-square-quote" class="story-icon"></i>
-                                <p>While building this project, I found it difficult to properly fit the video on the
-                                    landing page. After that, I referred to some websites and learned how to adjust it
-                                    correctly. Finally, I fixed the video and made it fit well on the landing page.</p>
-                            </div>
-                        </div>
+                <div class="resume-bio">
+                    <div class="section-header reveal reveal-up">
+                        <span class="subtitle">MY WORK</span>
+                        <h2>Recent Projects</h2>
                     </div>
+                    <div class="projects-grid stagger-container">
+                        <!-- Card 1: Aqua Shop -->
+                        <div class="project-card reveal reveal-up">
+                            <div class="project-img">
+                                <img src="assets/Aquarium.png" alt="The Aqua Shop" class="project-poster">
+                                <video class="project-video" id="aquaShopVideo" muted loop playsinline>
+                                    <source src="assets/Screen Recording 2026-02-23 180101.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-info-left">
+                                    <h3>The Aqua Shop</h3>
+                                    <p>Web Design, Frontend</p>
+                                </div>
+                                <a href="https://sathyasudar1705-boop.github.io/Aquarium/" target="_blank"
+                                    class="project-arrow">
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="project-hover-detail">
+                                <p>A responsive static website developed for a fish accessories store.</p>
+                                <div class="proj-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                            <div class="project-story">
+                                <div class="story-content">
+                                    <i data-lucide="message-square-quote" class="story-icon"></i>
+                                    <p>While building this project, I found it difficult to properly fit the video on
+                                        the
+                                        landing page. After that, I referred to some websites and learned how to adjust
+                                        it
+                                        correctly. Finally, I fixed the video and made it fit well on the landing page.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- Card 2: Origin X -->
-                    <div class="project-card reveal reveal-up">
-                        <div class="project-img">
-                            <img src="assets/Screenshot 2026-02-23 180540.png" alt="Origin X" class="project-poster">
-                            <video class="project-video" id="originXVideo" muted loop playsinline>
-                                <source src="assets/Screen Recording 2026-02-23 180817.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-info-left">
-                                <h3>Origin X</h3>
-                                <p>Web Design, Full Stack</p>
+                        <!-- Card 2: Origin X -->
+                        <div class="project-card reveal reveal-up">
+                            <div class="project-img">
+                                <img src="assets/Screenshot 2026-02-23 180540.png" alt="Origin X"
+                                    class="project-poster">
+                                <video class="project-video" id="originXVideo" muted loop playsinline>
+                                    <source src="assets/Screen Recording 2026-02-23 180817.mp4" type="video/mp4">
+                                </video>
                             </div>
-                            <a href="https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app"
-                                target="_blank" class="project-arrow">
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="project-hover-detail">
-                            <p>A full-stack job portal connecting job seekers and employers efficiently.</p>
-                            <div class="proj-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                                <span>Python</span>
-                                <span>FastAPI</span>
-                                <span>PostgreSQL</span>
+                            <div class="project-info">
+                                <div class="project-info-left">
+                                    <h3>Origin X</h3>
+                                    <p>Web Design, Full Stack</p>
+                                </div>
+                                <a href="https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app"
+                                    target="_blank" class="project-arrow">
+                                    <i data-lucide="arrow-right"></i>
+                                </a>
                             </div>
-                        </div>
-                        <div class="project-story">
-                            <div class="story-content">
-                                <i data-lucide="message-square-quote" class="story-icon"></i>
-                                <p>When I was building this project, I found it difficult to handle the API and add the
-                                    PDF generation feature. I faced many errors while implementing it. It took me 2 days
-                                    to fix those errors. Finally, I successfully added the PDF generation feature to the
-                                    project.</p>
+                            <div class="project-hover-detail">
+                                <p>A full-stack job portal connecting job seekers and employers efficiently.</p>
+                                <div class="proj-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                            <div class="project-story">
+                                <div class="story-content">
+                                    <i data-lucide="message-square-quote" class="story-icon"></i>
+                                    <p>When I was building this project, I found it difficult to handle the API and add
+                                        the
+                                        PDF generation feature. I faced many errors while implementing it. It took me 2
+                                        days
+                                        to fix those errors. Finally, I successfully added the PDF generation feature to
+                                        the
+                                        project.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

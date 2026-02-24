@@ -29,7 +29,7 @@
 body {
     background-color: var(--bg-dark);
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
         url('assets/Katyan-Art Shop _ Redbubble.jpg');
     background-size: cover;
     background-position: center;
@@ -120,7 +120,7 @@ main {
 
 .top-nav .logo {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 800;
     text-decoration: none;
     color: var(--primary);
@@ -129,14 +129,39 @@ main {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.top-nav .logo span {
-    color: var(--text-main);
+/* Shimmer Animation for Branding */
+.animate-name {
+    font-family: 'Outfit', sans-serif !important;
+    background: linear-gradient(to right,
+            #ff4d4d 20%,
+            #ff7675 40%,
+            #fcc02e 60%,
+            #ff4d4d 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    display: inline-block;
+    font-weight: 800;
 }
 
-.top-nav .logo:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
-    color: var(--secondary);
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.animate-name:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.3));
+}
+
+.top-nav .logo span {
+    color: var(--text-main);
+    -webkit-text-fill-color: var(--text-main);
 }
 
 .nav-container {
@@ -344,12 +369,81 @@ main {
     font-weight: 700;
     color: var(--text-main);
     margin-bottom: 2px;
+    transition: var(--transition);
 }
 
 .resume-item p {
     font-size: 0.95rem;
     color: var(--text-muted);
     opacity: 0.8;
+    transition: var(--transition);
+}
+
+/* Education Section Specific Refinements */
+#education .resume-col {
+    position: relative;
+    padding-bottom: 2rem;
+    transition: padding-bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#education .resume-col:has(.resume-item:hover) {
+    padding-bottom: 260px;
+}
+
+#education .resume-item {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#education .resume-item .resume-date,
+#education .resume-item h4,
+#education .resume-item p,
+#education .resume-item strong {
+    color: #000000 !important;
+    opacity: 1;
+}
+
+#education .resume-item:hover .resume-date,
+#education .resume-item:hover h4,
+#education .resume-item:hover p,
+#education .resume-item:hover strong {
+    color: var(--primary) !important;
+}
+
+.resume-hover-img-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    width: 280px;
+    height: 210px;
+    border-radius: 12px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 100;
+    box-shadow: var(--card-shadow);
+    border: 2px solid var(--primary);
+    pointer-events: none;
+}
+
+#education .resume-item:hover .resume-hover-img-container {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+}
+
+.resume-hover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .resume-hover-img-container {
+        display: none;
+    }
 }
 
 .resume-item-icon i {
@@ -400,7 +494,7 @@ main {
     /* Solid White Card */
     border-radius: 30px;
     /* Smooth curved corners */
-    padding: 4rem;
+    padding: 2rem;
     box-shadow:
         0 20px 60px rgba(0, 0, 0, 0.05),
         0 10px 20px rgba(0, 0, 0, 0.02);
@@ -2259,11 +2353,11 @@ main {
 }
 
 .photo-hero-main {
-    height: 520px;
+    height: 400px;
 }
 
 .photo-hero-side {
-    height: 520px;
+    height: 400px;
 }
 
 .photo-hero-main img,
@@ -2275,6 +2369,11 @@ main {
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.photo-hero-main:hover img,
+.photo-hero-side:hover img {
+    transform: scale(1.06);
+}
+
 .photo-hero-main:hover,
 .photo-hero-side:hover {
     transform: translateY(-8px);
@@ -2282,10 +2381,7 @@ main {
     border-color: var(--primary);
 }
 
-.photo-hero-main:hover img,
-.photo-hero-side:hover img {
-    transform: scale(1.06);
-}
+
 
 .photo-overlay {
     position: absolute;
