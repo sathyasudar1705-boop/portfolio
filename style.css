@@ -86,8 +86,10 @@ h4,
 }
 
 #education .container {
-    padding-left: 1.5rem;
-    max-width: 100%;
+    padding: 0 4rem;
+    /* Match global container padding */
+    max-width: 1400px;
+    /* Match global container max-width */
 }
 
 .section-padding {
@@ -384,6 +386,8 @@ main {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 0;
+    position: relative;
+    /* Anchor for absolute scroller */
 }
 
 .shift-right-150 {
@@ -524,8 +528,8 @@ main {
 .edu-scroller-track-container {
     position: absolute;
     top: 50%;
-    right: 12%;
-    /* Positioned to the right of the grid */
+    right: 0;
+    /* Align to the right edge of the relative grid */
     transform: translateY(-50%);
     width: 480px;
     /* Reduced width */
