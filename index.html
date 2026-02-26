@@ -19,126 +19,72 @@
 <body>
 
     <header class="top-nav">
-        <div class="container nav-container">
-            <div class="logo animate-name">SATHYASUDAR<span> V</span></div>
+        <div class="container nav-island">
+            <div class="nav-logo">
+                <a href="#home" class="logo animate-name">SATHYASUDAR<span> V</span></a>
+            </div>
+            <nav class="desktop-nav">
+                <ul class="nav-links-desktop">
+
+                    <li><a href="#about" class="nav-link-item">About</a></li>
+                    <li><a href="#photography" class="nav-link-item">Photography</a></li>
+                    <li><a href="#skills" class="nav-link-item">Skills</a></li>
+                    <li><a href="#contact" class="nav-link-item">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a href="#contact" class="nav-btn-sm">Let's Talk</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- ======================== RESUME HEADER SECTION ======================== -->
-        <section id="home" class="resume-header reveal reveal-visible">
+        <!-- ======================== HERO SECTION ======================== -->
+        <section id="home" class="hero-section reveal reveal-visible">
             <div class="container">
-                <!-- 3-Column Grid: Experience / Contact / Education -->
-                <!-- Section 1: Tools | Photo | Soft Skills -->
-                <div class="resume-bottom-row">
-                    <!-- Left Column: Skills & Location -->
-                    <div class="resume-tools reveal reveal-up">
-                        <h2 class="resume-heading">MY SKILLS:</h2>
-                        <div class="tools-grid">
-                            <div class="tool-icon glass" data-label="HTML5"><img src="assets/html-5.png" alt="HTML">
-                            </div>
-                            <div class="tool-icon glass" data-label="CSS3"><img src="assets/css-3.png" alt="CSS"></div>
-                            <div class="tool-icon glass" data-label="Java Script"><img src="assets/java-script.png"
-                                    alt="JavaScript"></div>
-                            <div class="tool-icon glass" data-label="Python"><img src="assets/python.png" alt="Python">
-                            </div>
-                            <div class="tool-icon glass" data-label="Pg Admin"><img src="assets/postgresql.png"
-                                    alt="PostgreSQL"></div>
-                            <div class="tool-icon glass" data-label="GitHub"><img src="assets/icons8-github-100.png"
-                                    alt="GitHub"></div>
-                            <div class="tool-icon glass" data-label="Figma"><img src="assets/figma.png" alt="Figma">
-                            </div>
-                            <div class="tool-icon glass" data-label="Team Work"><img
-                                    src="assets/icons8-team-work-50.png" alt="Team Work"></div>
-                            <div class="tool-icon glass" data-label="FastAPI"><img src="assets/icons8-api-48.png"
-                                    alt="API"></div>
-                            <div class="tool-icon glass" data-label="Postman"><img
-                                    src="assets/icons8-postman-inc-50.png" alt="Postman"></div>
-                            <div class="tool-icon glass" data-label="Critical Thinking"><img
-                                    src="assets/icons8-critical-thinking-50.png" alt="Critical Thinking"></div>
-                        </div>
-                        <div class="resume-location">
-                            <i data-lucide="map-pin"></i>
-                            <span>From Tenkasi, Tamil Nadu, India</span>
-                        </div>
-                    </div>
-
-                    <!-- Center Column: Photo -->
-                    <div class="resume-photo-hero reveal reveal-up">
-                        <div class="photo-wrapper">
+                <!-- Asymmetric Main Row: Photo | Intro -->
+                <div class="hero-creative-container">
+                    <!-- Left: Creative Photo Area -->
+                    <div class="hero-photo-area reveal reveal-left">
+                        <div class="photo-bg-shape"></div>
+                        <div class="creative-photo-wrapper">
                             <img src="assets/IMG_20260223_230502.png" alt="Sathyasudar">
-                            <div class="photo-name-overlay">
-                                <h1 class="animate-name">Sathyasudar</h1>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Right Column: Core Competencies -->
-                    <div class="resume-core-competencies reveal reveal-up">
-                        <h2 class="resume-heading">CORE COMPETENCIES:</h2>
-                        <ul class="core-competencies-list">
-                            <li>Problem Solving</li>
-                            <li>Team Work</li>
-                            <li>Clean Code</li>
-                            <li>Responsive Design</li>
-                            <li>Continuous Learning</li>
-                            <li>Web Development</li>
-                            <li>API Design</li>
-                            <li>Database Management</li>
-                            <li>Version Control</li>
-                            <li>Curious Thinker</li>
-                            <li>Adaptable</li>
-                        </ul>
-                    </div>
-                </div> <!-- End resume-bottom-row -->
-            </div> <!-- End Hero Container -->
-        </section>
-
-        <!-- New Full-Width White Section for Bio & Achievements -->
-        <section id="about" class="bio-full-white reveal">
-            <div class="container">
-                <div class="resume-bio">
-                    <h2 class="resume-heading"><i data-lucide="user"></i> About Me:</h2>
-                    <p>I am <strong>Sathya Sudar</strong>, a Software Development Trainee from Tenkasi, currently
-                        training at <strong>Freshworks STS Software Academy</strong>. I enjoy building responsive
-                        and user-friendly web applications using HTML, CSS, JavaScript, and Python. I am passionate
-                        about technology because I like solving real-world problems and continuously improving my
-                        skills. I always focus on writing clean code, learning consistently, and gaining knowledge
-                        through practical experience.</p>
-                    <p>I completed my 12th standard in 2022. After that, I worked in part-time jobs for three years,
-                        which helped me develop discipline, responsibility, and communication skills. My father is a
-                        farmer and my mother is a housewife. I have one brother who is studying at Anna University.</p>
-                    <p>In the beginning, I did not have any coding knowledge. After joining the academy, I started
-                        learning web development from the basics and improved my technical skills step by step.
-                        During my learning journey, I built two projects — one static website and one full-stack
-                        project — which helped me understand real-world development.</p>
-                    <p>My goal is to become a skilled full-stack developer and get placed in a good company where I
-                        can grow, learn new technologies, and contribute to meaningful projects.</p>
-
-                    <!-- Achievements Section -->
-                    <div class="achievements-accordion">
-                        <button class="achievements-toggle" id="achievementsToggle" onclick="toggleAchievements()">
-                            <div class="title-with-icon">
-                                <i data-lucide="award"></i>
-                                <span>Achievements</span>
+                    <!-- Right: Creative Intro Text -->
+                    <div class="hero-text-area reveal reveal-right">
+                        <div class="creative-text-content">
+                            <div class="creative-greeting">
+                                <span class="greeting-line"></span>
+                                <span class="greeting-text">HELLO, I AM</span>
                             </div>
-                            <i data-lucide="chevron-down" class="chevron-icon"></i>
-                        </button>
-                        <div class="achievements-box" id="achievementsBox">
-                            <ul class="achievements-list">
-                                <li><i data-lucide="check-circle"></i> Started my journey without any prior coding
-                                    knowledge and successfully learned programming through self-learning and
-                                    consistent practice.</li>
-                                <li><i data-lucide="check-circle"></i> Overcame stage fear and improved my confidence
-                                    in communication and presentations.</li>
-                                <li><i data-lucide="check-circle"></i> Transitioned from 3 years of manual labor work
-                                    to utilizing new career opportunities in technology.</li>
-                            </ul>
+                            <h1 class="creative-name">Sathya <span class="name-highlight">sudar</span></h1>
+
+                            <div class="creative-meta">
+                                <span class="loc-pill"><i data-lucide="map-pin"></i> Tenkasi, India</span>
+                            </div>
+                            <!-- Integrated Story Content -->
+                            <div class="about-story-content">
+                                <p style="font-size: 1.2rem; line-height: 1.8; color: #475569;">I completed my 12th
+                                    standard in 2022. After that, I worked in part-time jobs for three years, which
+                                    helped me become more responsible and disciplined. My father is a farmer and my
+                                    mother is a housewife. I have one brother who is studying at Anna University. Based
+                                    on my sister’s suggestion, I joined a web development course at an academy. At
+                                    first, I did not know coding, but during my training, I learned web development and
+                                    created two projects – one static website and one full-stack application. I am now
+                                    looking forward to starting my career in the IT field and improving my skills
+                                    further.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <div class="section-separator"></div>
+
+
 
 
 
@@ -156,9 +102,6 @@
                                     <h4><strong>Full Stack Trainee</strong></h4>
                                     <p><strong>Freshworks STS Software Academy, Chennai</strong></p>
                                 </div>
-                                <div class="resume-hover-img-container">
-                                    <img src="assets/DSC00653-2.jpg" alt="Academy" class="resume-hover-img">
-                                </div>
                             </div>
                             <div class="resume-item">
                                 <span class="resume-date"><strong>2021 - 2022</strong></span>
@@ -166,9 +109,6 @@
                                 <div>
                                     <h4><strong>HSC</strong></h4>
                                     <p><strong>PAHSS, Avudaiyanoor, Tenkasi</strong></p>
-                                </div>
-                                <div class="resume-hover-img-container">
-                                    <img src="assets/IMG_20260224_221444.jpg" alt="HSC" class="resume-hover-img">
                                 </div>
                             </div>
                             <div class="resume-item">
@@ -178,15 +118,221 @@
                                     <h4><strong>SSLC</strong></h4>
                                     <p><strong>NHHS, Keelapavoor, Tenkasi</strong></p>
                                 </div>
-                                <div class="resume-hover-img-container">
-                                    <img src="assets/IMG_20260224_221423.jpg" alt="SSLC" class="resume-hover-img">
-                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Unified Education Image Scroller -->
+                        <div class="edu-scroller-track-container">
+                            <div class="edu-scroller-track">
+                                <img src="assets/DSC00653-2.jpg" alt="Academy" class="edu-track-img">
+                                <img src="assets/IMG_20260224_221444.jpg" alt="HSC" class="edu-track-img">
+                                <img src="assets/IMG_20260224_221423.jpg" alt="SSLC" class="edu-track-img">
+                                <!-- Duplicates for seamless loop -->
+                                <img src="assets/DSC00653-2.jpg" alt="Academy" class="edu-track-img">
+                                <img src="assets/IMG_20260224_221444.jpg" alt="HSC" class="edu-track-img">
+                                <img src="assets/IMG_20260224_221423.jpg" alt="SSLC" class="edu-track-img">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ======================== PHOTOGRAPHY SECTION ======================== -->
+        <section id="photography" class="photography section-padding reveal">
+            <div class="container">
+                <div class="section-header center reveal reveal-up">
+                    <span class="subtitle">MOMENTS</span>
+                    <h2>Photography</h2>
+                    <p class="photo-subtitle">Capturing the world through my lens <i data-lucide="camera"
+                            class="photo-icon"></i></p>
+                </div>
+
+                <!-- Featured Hero Duo -->
+                <div class="photo-hero reveal reveal-up">
+                    <div class="photo-hero-main">
+                        <img src="assets/portfolio/IMG_20260126_151428.jpg" alt="Featured Shot 1">
+                        <div class="photo-overlay"><span>January 2026</span></div>
+                    </div>
+                    <div class="photo-hero-side">
+                        <img src="assets/portfolio/IMG_20251112_175201.jpg" alt="Featured Shot 2">
+                        <div class="photo-overlay"><span>November 2025</span></div>
+                    </div>
+                </div>
+
+                <!-- More Pictures Toggle -->
+                <div class="photo-toggle-wrap reveal reveal-up">
+                    <button class="photo-more-btn" id="galleryMoreBtn" onclick="toggleGallery()">
+                        <i data-lucide="images"></i>
+                        <span class="toggle-text">View All Photos</span>
+                        <i class="toggle-chevron" data-lucide="chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Full Gallery Grid -->
+                <div class="photo-grid-wrap" id="galleryWrapper" style="display:none;">
+                    <div class="photo-grid">
+                        <div class="photo-cell"><img src="assets/portfolio/IMG20250601120321.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG20250619083451.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251109_160027.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251212_065342.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251212_070317.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251213_084927.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251223_130459.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251223_130901.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251227_131013.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251230_181706.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260101_185611.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260115_085801.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260115_142910.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260118_122035.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260131_181418.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251112_175201.jpg" alt="Photo"></div>
+                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260126_151428.jpg" alt="Photo"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== SKILLS SECTION ======================== -->
+        <section id="skills" class="bio-full-white reveal">
+            <div class="container">
+                <div class="hero-skills-row reveal reveal-up">
+                    <div class="hero-skills-col">
+                        <h2 class="resume-heading"><i data-lucide="wrench"></i> My Skills:</h2>
+                        <div class="skills-scroller">
+                            <div class="skills-track">
+                                <!-- Set 1 -->
+                                <div class="tool-icon glass" data-label="HTML5"><img src="assets/Skills/html-5.png"
+                                        alt="HTML"></div>
+                                <div class="tool-icon glass" data-label="CSS3"><img src="assets/Skills/css-3.png"
+                                        alt="CSS"></div>
+                                <div class="tool-icon glass" data-label="JavaScript"><img
+                                        src="assets/Skills/java-script.png" alt="JS"></div>
+                                <div class="tool-icon glass" data-label="Python"><img src="assets/Skills/python.png"
+                                        alt="Python"></div>
+                                <div class="tool-icon glass" data-label="PostgreSQL"><img
+                                        src="assets/Skills/postgresql.png" alt="Postgres"></div>
+                                <div class="tool-icon glass" data-label="GitHub"><img
+                                        src="assets/Skills/icons8-github-100.png" alt="GitHub"></div>
+                                <div class="tool-icon glass" data-label="FastAPI"><img
+                                        src="assets/Skills/icons8-api-48.png" alt="FastAPI"></div>
+                                <div class="tool-icon glass" data-label="Postman"><img
+                                        src="assets/Skills/icons8-postman-inc-50.png" alt="Postman"></div>
+                                <div class="tool-icon glass" data-label="Figma"><img src="assets/Skills/figma.png"
+                                        alt="Figma"></div>
+                                <div class="tool-icon glass" data-label="Team Work"><img
+                                        src="assets/Skills/icons8-team-work-50.png" alt="Team"></div>
+                                <div class="tool-icon glass" data-label="Collaboration"><img
+                                        src="assets/Skills/teamwork.png" alt="Collab"></div>
+                                <div class="tool-icon glass" data-label="Problem Solving"><img
+                                        src="assets/Skills/problem-solve.png" alt="Solve"></div>
+                                <div class="tool-icon glass" data-label="Critical Thinking"><img
+                                        src="assets/Skills/icons8-critical-thinking-50.png" alt="Think"></div>
+                                <!-- Set 2 (Duplicates for infinite loop) -->
+                                <div class="tool-icon glass" data-label="HTML5"><img src="assets/Skills/html-5.png"
+                                        alt="HTML"></div>
+                                <div class="tool-icon glass" data-label="CSS3"><img src="assets/Skills/css-3.png"
+                                        alt="CSS"></div>
+                                <div class="tool-icon glass" data-label="JavaScript"><img
+                                        src="assets/Skills/java-script.png" alt="JS"></div>
+                                <div class="tool-icon glass" data-label="Python"><img src="assets/Skills/python.png"
+                                        alt="Python"></div>
+                                <div class="tool-icon glass" data-label="PostgreSQL"><img
+                                        src="assets/Skills/postgresql.png" alt="Postgres"></div>
+                                <div class="tool-icon glass" data-label="GitHub"><img
+                                        src="assets/Skills/icons8-github-100.png" alt="GitHub"></div>
+                                <div class="tool-icon glass" data-label="FastAPI"><img
+                                        src="assets/Skills/icons8-api-48.png" alt="FastAPI"></div>
+                                <div class="tool-icon glass" data-label="Postman"><img
+                                        src="assets/Skills/icons8-postman-inc-50.png" alt="Postman"></div>
+                                <div class="tool-icon glass" data-label="Figma"><img src="assets/Skills/figma.png"
+                                        alt="Figma"></div>
+                                <div class="tool-icon glass" data-label="Team Work"><img
+                                        src="assets/Skills/icons8-team-work-50.png" alt="Team"></div>
+                                <div class="tool-icon glass" data-label="Collaboration"><img
+                                        src="assets/Skills/teamwork.png" alt="Collab"></div>
+                                <div class="tool-icon glass" data-label="Problem Solving"><img
+                                        src="assets/Skills/problem-solve.png" alt="Solve"></div>
+                                <div class="tool-icon glass" data-label="Critical Thinking"><img
+                                        src="assets/Skills/icons8-critical-thinking-50.png" alt="Think"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- ======================== LIFE SKILLS SECTION ======================== -->
+        <section id="life-skills" class="bio-full-white reveal">
+            <div class="container">
+                <div class="life-skills-slider-wrapper">
+                    <div class="life-skills-slider" id="lsSlider">
+                        <!-- Slide 1: MugMate -->
+                        <div class="ls-slide active" data-index="0">
+                            <div class="life-skills-grid">
+                                <div class="life-skills-content">
+                                    <h2 class="resume-heading"><i data-lucide="users"></i> Life Skills:</h2>
+                                    <div class="life-skills-text-card glass">
+                                        <p>We are doing a project building challenge in life skills class. Our team
+                                            built a project
+                                            called <strong>MugMate</strong>. It helps to keep drinks hot.</p>
+                                        <p>We are very happy and we enjoy building this project. We worked together as a
+                                            team. We
+                                            learned many new things.</p>
+                                    </div>
+                                </div>
+                                <div class="life-skills-image-area">
+                                    <div class="life-skills-img-frame glass">
+                                        <img src="assets/Squad.jpg" alt="Team Squad">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2: Workplace Study -->
+                        <div class="ls-slide" data-index="1">
+                            <div class="life-skills-grid">
+                                <div class="life-skills-content">
+                                    <h2 class="resume-heading"><i data-lucide="users"></i> Life Skills:</h2>
+                                    <div class="life-skills-text-card glass">
+                                        <p>As a team (<strong>Debug Demons</strong>), we did a workplace study for our
+                                            Life Skills assessment. We collected information about different employees
+                                            from LinkedIn, learned about their job roles and skills, and presented our
+                                            findings to understand how the real workplace works.</p>
+                                    </div>
+                                </div>
+                                <div class="life-skills-image-area">
+                                    <div class="life-skills-img-frame glass">
+                                        <img src="assets/Screenshot 2026-02-26 114846.png" alt="Workplace Study">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Navigation -->
+                    <div class="ls-nav">
+                        <button class="ls-nav-btn prev" onclick="moveSlide(-1)">
+                            <i data-lucide="chevron-left"></i> Before
+                        </button>
+                        <div class="ls-dots">
+                            <span class="ls-dot active" onclick="goToSlide(0)"></span>
+                            <span class="ls-dot" onclick="goToSlide(1)"></span>
+                        </div>
+                        <button class="ls-nav-btn next" onclick="moveSlide(1)">
+                            Next <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
 
         <!-- ======================== PROJECTS SECTION ======================== -->
         <section id="projects" class="bio-full-white reveal">
@@ -249,8 +395,8 @@
                                     <h3>Origin X</h3>
                                     <p>Web Design, Full Stack</p>
                                 </div>
-                                <a href="https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app"
-                                    target="_blank" class="project-arrow">
+                                <a href="https://origin-frontend-sepia.vercel.app/" target="_blank"
+                                    class="project-arrow">
                                     <i data-lucide="arrow-right"></i>
                                 </a>
                             </div>
@@ -278,63 +424,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======================== PHOTOGRAPHY SECTION ======================== -->
-        <section id="photography" class="photography section-padding reveal">
-            <div class="container">
-                <div class="section-header center reveal reveal-up">
-                    <span class="subtitle">MOMENTS</span>
-                    <h2>Photography</h2>
-                    <p class="photo-subtitle">Capturing the world through my lens <i data-lucide="camera"
-                            class="photo-icon"></i></p>
-                </div>
-
-                <!-- Featured Hero Duo -->
-                <div class="photo-hero reveal reveal-up">
-                    <div class="photo-hero-main">
-                        <img src="assets/portfolio/IMG_20260126_151428.jpg" alt="Featured Shot 1">
-                        <div class="photo-overlay"><span>January 2026</span></div>
-                    </div>
-                    <div class="photo-hero-side">
-                        <img src="assets/portfolio/IMG_20251112_175201.jpg" alt="Featured Shot 2">
-                        <div class="photo-overlay"><span>November 2025</span></div>
-                    </div>
-                </div>
-
-                <!-- More Pictures Toggle -->
-                <div class="photo-toggle-wrap reveal reveal-up">
-                    <button class="photo-more-btn" id="galleryMoreBtn" onclick="toggleGallery()">
-                        <i data-lucide="images"></i>
-                        <span class="toggle-text">View All Photos</span>
-                        <i class="toggle-chevron" data-lucide="chevron-down"></i>
-                    </button>
-                </div>
-
-                <!-- Full Gallery Grid -->
-                <div class="photo-grid-wrap" id="galleryWrapper" style="display:none;">
-                    <div class="photo-grid">
-                        <div class="photo-cell"><img src="assets/portfolio/IMG20250601120321.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG20250619083451.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251109_160027.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251212_065342.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251212_070317.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251213_084927.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251223_130459.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251223_130901.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251227_131013.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251230_181706.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260101_185611.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260115_085801.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260115_142910.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260118_122035.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260131_181418.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20251112_175201.jpg" alt="Photo"></div>
-                        <div class="photo-cell"><img src="assets/portfolio/IMG_20260126_151428.jpg" alt="Photo"></div>
-
                     </div>
                 </div>
             </div>
@@ -404,14 +493,6 @@
         </section>
     </main>
 
-    <nav class="bottom-nav">
-        <ul class="nav-links">
-            <li><a href="#home" title="About"><i data-lucide="user"></i><span>About</span></a></li>
-            <li><a href="#projects" title="Projects"><i data-lucide="briefcase"></i><span>Projects</span></a></li>
-            <li><a href="#photography" title="Photography"><i data-lucide="camera"></i><span>Photography</span></a></li>
-            <li><a href="#contact" title="Contact"><i data-lucide="mail"></i><span>Contact</span></a></li>
-        </ul>
-    </nav>
 
     <!-- Project Modal -->
     <div id="project-modal" class="modal">
@@ -424,6 +505,38 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        let currentLsSlide = 0;
+        const lsSlides = document.querySelectorAll('.ls-slide');
+        const lsSlider = document.getElementById('lsSlider');
+        const lsDots = document.querySelectorAll('.ls-dot');
+
+        function updateSlider() {
+            // Update slider position
+            lsSlider.style.transform = `translateX(-${currentLsSlide * 100}%)`;
+
+            // Update active states
+            lsSlides.forEach((slide, idx) => {
+                slide.classList.toggle('active', idx === currentLsSlide);
+            });
+
+            lsDots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentLsSlide);
+            });
+        }
+
+        window.moveSlide = function (direction) {
+            currentLsSlide += direction;
+            if (currentLsSlide < 0) currentLsSlide = lsSlides.length - 1;
+            if (currentLsSlide >= lsSlides.length) currentLsSlide = 0;
+            updateSlider();
+        };
+
+        window.goToSlide = function (index) {
+            currentLsSlide = index;
+            updateSlider();
+        };
+    </script>
     <script>
         lucide.createIcons();
     </script>
