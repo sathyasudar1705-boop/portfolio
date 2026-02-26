@@ -528,8 +528,8 @@ main {
 .edu-scroller-track-container {
     position: absolute;
     top: 50%;
-    right: 0;
-    /* Align to the right edge of the relative grid */
+    right: 90px;
+    /* Fine-tuned position */
     transform: translateY(-50%);
     width: 480px;
     /* Reduced width */
