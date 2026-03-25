@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --bg-dark: #fdfcf8;
     --bg-accent: #f8f6f0;
     --primary: #dc2626;
@@ -1030,8 +1030,8 @@ main {
 .skills-scroller {
     width: 100%;
     overflow: hidden;
-    padding: 3.5rem 0 1.5rem;
-    /* Increased top padding to show tooltips */
+    padding: 1.5rem 0 2.5rem;
+    /* Bottom padding for always-visible labels */
     position: relative;
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
@@ -1184,28 +1184,18 @@ main {
 .tool-icon::after {
     content: attr(data-label);
     position: absolute;
-    bottom: calc(100% + 8px);
+    top: calc(100% + 6px);
     left: 50%;
-    transform: translateX(-50%) translateY(5px);
-    background: var(--primary);
-    color: white;
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: 0.7rem;
-    font-weight: 600;
+    transform: translateX(-50%);
+    color: #475569;
+    font-size: 0.68rem;
+    font-weight: 700;
     white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s var(--ease-out-expo);
-    border: 1px solid var(--glass-border);
-    pointer-events: none;
-    z-index: 10;
-}
-
-.tool-icon:hover::after {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0);
+    pointer-events: none;
+    z-index: 10;
+    letter-spacing: 0.3px;
 }
 
 
