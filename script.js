@@ -231,6 +231,14 @@ const projectData = {
         tech: ['Python', 'FastAPI', 'PostgreSQL', 'JavaScript', 'Tailwind CSS'],
         link: 'https://origin-frontend-exs53360d-sathya-sudars-projects.vercel.app',
         img: 'assets/Screenshot 2026-02-23 180540.png'
+    },
+    'Lensoria': {
+        title: 'Lensoria',
+        desc: 'Seamlessly connecting photographers and clients.',
+        longDesc: 'A premium MERN stack application designed for professional photography booking, featuring user and photographer dashboards, portfolio management, and a smooth booking flow.',
+        tech: ['MongoDB', 'Express', 'React', 'Node.js', 'React Router', "Material-ui"],
+        link: 'https://studio-rho-orcin.vercel.app/',
+        img: 'assets/Screenshot 2026-04-14 215757.png'
     }
 };
 
@@ -322,7 +330,8 @@ if (modal) {
 document.addEventListener('DOMContentLoaded', () => {
     const videoProjects = [
         { card: '.project-card:nth-child(1)', video: 'aquaShopVideo' },
-        { card: '.project-card:nth-child(2)', video: 'originXVideo' }
+        { card: '.project-card:nth-child(2)', video: 'originXVideo' },
+        { card: '.project-card:nth-child(3)', video: 'lensoriaVideo' }
     ];
 
     videoProjects.forEach(proj => {

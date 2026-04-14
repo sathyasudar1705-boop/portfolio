@@ -80,7 +80,7 @@ h4,
 
 
 .container {
-    max-width: 1400px;
+    max-width: 1950px;
     margin: 0 auto;
     padding: 0 4rem;
 }
@@ -88,7 +88,7 @@ h4,
 #education .container {
     padding: 0 4rem;
     /* Match global container padding */
-    max-width: 1400px;
+    max-width: 1950px;
     /* Match global container max-width */
 }
 
@@ -636,7 +636,7 @@ main {
 }
 
 .resume-bio {
-    max-width: 1350px;
+    max-width: 1900px;
     margin-left: 0;
     background: #ffffff;
     /* Solid White Card */
@@ -1379,12 +1379,10 @@ main {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    /* Increased card width and changed to auto-fit */
+    grid-template-columns: repeat(3, 1fr);
+    /* Forced to 3 columns as requested */
     gap: 2.5rem;
-    /* Increased gap */
     justify-content: center;
-    /* Center the grid items */
 }
 
 @media (max-width: 480px) {
@@ -1423,8 +1421,8 @@ main {
 
 .project-img {
     position: relative;
-    height: 300px;
-    /* Increased from 220px */
+    height: 280px;
+    /* Reduced height for a wider, panoramic look */
     overflow: hidden;
     border-radius: 14px;
     margin: 8px 8px 0;
