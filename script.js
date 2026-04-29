@@ -239,6 +239,14 @@ const projectData = {
         tech: ['MongoDB', 'Express', 'React', 'Node.js', 'React Router', "Material-ui"],
         link: 'https://studio-rho-orcin.vercel.app/',
         img: 'assets/Screenshot 2026-04-14 215757.png'
+    },
+    'Maplio': {
+        title: 'Maplio',
+        desc: 'Discover and share interesting places around you.',
+        longDesc: 'A location-based social platform built on the MERN stack. It features interactive Google Maps integration, user-driven content, and a clean, responsive interface for sharing local gems.',
+        tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Google Maps API'],
+        link: 'https://places-frontend-react.vercel.app/',
+        img: 'assets/chrome_An5EQesfve.jpg'
     }
 };
 
@@ -331,7 +339,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoProjects = [
         { card: '.project-card:nth-child(1)', video: 'aquaShopVideo' },
         { card: '.project-card:nth-child(2)', video: 'originXVideo' },
-        { card: '.project-card:nth-child(3)', video: 'lensoriaVideo' }
+        { card: '.project-card:nth-child(3)', video: 'lensoriaVideo' },
+        { card: '.project-card:nth-child(4)', video: 'maplioVideo' }
     ];
 
     videoProjects.forEach(proj => {
